@@ -45,6 +45,11 @@ fun MainScreen() {
             )
         }
         item { CategoriesRow() }
+        item {
+            Spacer(
+                modifier = Modifier.height(8.dp)
+            )
+        }
         items(items.size) {
             PropertyCard(item = items[it])
         }
